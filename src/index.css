@@ -19,6 +19,14 @@
   --White: hsl(0, 100%, 100%);
 }
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 /* Typography */
 
 h1 {
@@ -121,5 +129,25 @@ button {
 
   p.title {
     font-size: 14px;
+  }
+}
+
+header {
+  height: 538px;
+  width: 100%;
+  background-image: url("/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 800px;
+    background-image: url("/desktop/image-header.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    /*  */
   }
 }
