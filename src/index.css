@@ -205,6 +205,7 @@ header nav {
 .hamburger-menu img {
   display: block;
 }
+
 .hamburger-menu.open img {
   filter: invert(21%) sepia(18%) saturate(832%) hue-rotate(202deg)
     brightness(91%) contrast(92%);
@@ -226,6 +227,8 @@ header nav {
   align-items: center;
   padding: 2.3rem;
   z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-menu.open::after {
