@@ -1,4 +1,4 @@
-export default function Main() {
+export default function MainContent() {
   return (
     <main>
       <article>
@@ -16,9 +16,12 @@ export default function Main() {
               brands grow fast. Engage your clients through compelling visuals
               that do most of the marketing for you.
             </p>
-            <a className="main-content-link" href="#">
-              Learn more
-            </a>
+
+            <div>
+              <a className="main-content-link yellow" href="#">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </article>
@@ -34,23 +37,34 @@ export default function Main() {
               photographers, videographers, and copywriters, we&apos;ll build
               and extend your brand in digital places.
             </p>
-            <a className="main-content-link" href="#">
-              Learn more
-            </a>
+            <div>
+              <a className="main-content-link red" href="#">
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
       </article>
       <article>
-        <section className="secondary">
-          <h3>Graphic design</h3>
-          Great design makes you memorable. We deliver artwork that underscores
-          your brand message and captures potential clients&apos; attention.
-        </section>
-        <section className="secondary">
-          <h3>Photography</h3>
-          Increase your credibility by getting the most stunning, high-quality
-          photos that improve your business image.
-        </section>
+        <div className="secondary">
+          <div className="secondary-text">
+            <h3>Graphic design</h3>
+            <p className="alt">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential
+              clients&apos; attention.
+            </p>
+          </div>
+        </div>
+        <div className="secondary">
+          <div className="secondary-text">
+            <h3>Photography</h3>
+            <p className="alt">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
       </article>
     </main>
   );

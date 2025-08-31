@@ -7,8 +7,9 @@
   --Red-400: hsl(7, 99%, 70%);
   --Yellow-500: hsl(51, 100%, 49%);
   --Green-800: hsl(167, 40%, 24%); /* (graphic design text) */
-  --Blue-800: hsl(198, 62%, 26%); /* (photography text) */
+  --Green-600: hsl(166, 30%, 35%); /* (graphic design text) */
   --Green-500: hsl(167, 34%, 41%); /* (footer) */
+  --Blue-800: hsl(198, 62%, 26%); /* (photography text) */
 
   /* Neutral */
 
@@ -33,6 +34,9 @@ html {
   font-size: 18px;
 }
 
+.site-wrapper {
+  width: 100vw;
+}
 /* Typography */
 
 h1 {
@@ -58,9 +62,10 @@ h2 {
 h3 {
   font-family: "Fraunces", serif;
   font-size: 28px;
-  line-height: 125%;
+  line-height: 115%;
   letter-spacing: 0px;
   color: var(--Green-800);
+  font-weight: 900;
 }
 
 /* Testimonials */
@@ -86,6 +91,8 @@ p.alt {
   font-size: 15px;
   line-height: 170%;
   letter-spacing: 0px;
+  color: var(--Green-600);
+  font-weight: 700;
 }
 
 p.name {
@@ -117,32 +124,6 @@ p.footer {
   font-size: 20px;
   line-height: 125%;
   color: var(--Grey-550);
-}
-
-.main-content-link {
-  font-family: "Fraunces", serif;
-  font-size: 14px;
-  line-height: 155%;
-  letter-spacing: 1px;
-  color: var(--Grey-950);
-  text-transform: uppercase;
-  font-weight: 800;
-  position: relative;
-  cursor: pointer;
-}
-
-.main-content-link::after {
-  content: "";
-  position: absolute;
-  background: var(--yellow);
-  bottom: 0.48rem;
-  left: 0;
-  min-width: 100%;
-  min-height: 1.12rem;
-  z-index: -1;
-  border-radius: 0.8rem;
-  transition: 0.35s;
-  opacity: 0.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -277,16 +258,15 @@ header nav {
 
 /* Main */
 main article {
-  flex-basis: 100%;
-  min-height: 85vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .main-content-wrapper {
-  padding: 3rem 1.3rem;
+  padding: 3rem 1.3rem 4rem;
   width: 100%;
 }
 
@@ -295,6 +275,39 @@ main article {
   flex-direction: column;
   text-align: center;
   gap: 1.3rem;
+}
+
+.main-content-link {
+  font-family: "Fraunces", serif;
+  font-size: 14px;
+  line-height: 155%;
+  letter-spacing: 1px;
+  color: var(--Grey-950);
+  text-transform: uppercase;
+  font-weight: 800;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.main-content-link::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  z-index: -1;
+  border-radius: 0.8rem;
+}
+.main-content-link.yellow::after {
+  opacity: 0.3;
+  background: var(--Yellow-500);
+}
+
+.main-content-link.red::after {
+  opacity: 0.3;
+  background: var(--Red-400);
 }
 
 .main-image {
@@ -306,6 +319,31 @@ main article {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.secondary {
+  width: 100%;
+  height: 600px;
+  padding: 3rem 1.3rem;
+  background-color: var(--Green-500);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: center;
+}
+
+.secondary:first-of-type {
+  background: url("/mobile/image-graphic-design.jpg") no-repeat center/cover;
+}
+
+.secondary:last-of-type {
+  background: url("/mobile/image-photography.jpg") no-repeat center/cover;
+}
+
+.secondary-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
