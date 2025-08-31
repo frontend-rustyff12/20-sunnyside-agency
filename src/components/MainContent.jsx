@@ -1,14 +1,14 @@
 export default function MainContent() {
   return (
     <main>
-      <article>
-        <div className="main-image transform">
+      <article className="main-first">
+        <div className="main-image transform first">
           <img
             src="/mobile/image-transform.jpg"
             alt="Image of an egg representing transformation"
           />
         </div>
-        <div className="main-content-wrapper">
+        <div className="main-content-wrapper second">
           <div className="main-content-text">
             <h2>Transform your brand</h2>
             <p>
@@ -25,11 +25,11 @@ export default function MainContent() {
           </div>
         </div>
       </article>
-      <article>
-        <div className="main-image glass">
+      <article className="main-second">
+        <div className="main-image glass third">
           <img src="/mobile/image-stand-out.jpg" alt="" />
         </div>
-        <div className="main-content-wrapper">
+        <div className="main-content-wrapper fourth">
           <div className="main-content-text">
             <h2>Stand out to the right audience</h2>
             <p>
@@ -45,8 +45,8 @@ export default function MainContent() {
           </div>
         </div>
       </article>
-      <article>
-        <div className="secondary">
+      <article className="main-third">
+        <div className="secondary fifth">
           <div className="secondary-text">
             <h3>Graphic design</h3>
             <p className="alt">
@@ -56,7 +56,7 @@ export default function MainContent() {
             </p>
           </div>
         </div>
-        <div className="secondary">
+        <div className="secondary sixth">
           <div className="secondary-text">
             <h3>Photography</h3>
             <p className="alt">
