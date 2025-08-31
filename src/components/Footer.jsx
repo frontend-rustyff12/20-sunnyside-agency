@@ -6,17 +6,32 @@ export default function Footer() {
         <nav>
           <ul className="footer-nav-links">
             <li>
-              <a className="footer-link" href="#">
+              <a
+                className="footer-link"
+                href="#"
+                role="presentation"
+                tabindex="-1"
+              >
                 About
               </a>
             </li>
             <li>
-              <a className="footer-link" href="#">
+              <a
+                className="footer-link"
+                href="#"
+                role="presentation"
+                tabindex="-1"
+              >
                 Services
               </a>
             </li>
             <li>
-              <a className="footer-link" href="#">
+              <a
+                className="footer-link"
+                href="#"
+                role="presentation"
+                tabindex="-1"
+              >
                 Projects
               </a>
             </li>

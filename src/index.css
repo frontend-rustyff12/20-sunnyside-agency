@@ -484,6 +484,13 @@ footer .logo {
   margin-top: auto;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
   /* Header */
   header {

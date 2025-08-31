@@ -18,7 +18,12 @@ export default function MainContent() {
             </p>
 
             <div>
-              <a className="main-content-link yellow" href="#">
+              <a
+                className="main-content-link yellow"
+                href="#"
+                role="presentation"
+                tabindex="-1"
+              >
                 Learn more
               </a>
             </div>
@@ -38,7 +43,12 @@ export default function MainContent() {
               and extend your brand in digital places.
             </p>
             <div>
-              <a className="main-content-link red" href="#">
+              <a
+                className="main-content-link red"
+                href="#"
+                role="presentation"
+                tabindex="-1"
+              >
                 Learn more
               </a>
             </div>

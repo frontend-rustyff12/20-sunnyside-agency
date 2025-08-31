@@ -12,22 +12,31 @@ export default function Header() {
         <button
           onClick={toggleMenu}
           className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}
+          aria-label="Toggle navigation menu"
         >
           <img src="/icon-hamburger.svg" alt="" />
         </button>
 
         <ul className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
           <li className="nav-item">
-            <a href="#">About</a>
+            <a href="#" role="presentation" tabindex="-1">
+              About
+            </a>
           </li>
           <li className="nav-item">
-            <a href="#">Services</a>
+            <a href="#" role="presentation" tabindex="-1">
+              Services
+            </a>
           </li>
           <li className="nav-item">
-            <a href="#">Projects</a>
+            <a href="#" role="presentation" tabindex="-1">
+              Projects
+            </a>
           </li>
           <li className="nav-item contact">
-            <a href="#">Contact</a>
+            <a href="#" role="presentation" tabindex="-1">
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
