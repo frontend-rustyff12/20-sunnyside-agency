@@ -33,7 +33,6 @@ export default function Testimonial() {
         <h4>Client Testimonials</h4>
         <div className="testimonials-wrapper">{TestimonialElements}</div>
       </section>
-      )
     </>
   );
 }

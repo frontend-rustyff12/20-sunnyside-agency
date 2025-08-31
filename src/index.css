@@ -395,6 +395,24 @@ main article {
   color: var(--Grey-600);
 }
 
+/* Photo box */
+.photo-box-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
   /* Header */
   header {
@@ -523,6 +541,10 @@ main article {
     gap: 1.7rem;
   }
 
+  .card-description {
+    height: 150px;
+  }
+
   /* Testimonials */
 
   .testimonials {
@@ -537,11 +559,18 @@ main article {
   }
 
   .card {
-    gap: 4rem;
+    gap: 0rem;
   }
 
   .card-top .card-description {
     margin-top: 1.5rem;
+  }
+
+  /* Photo box */
+
+  .photo-box-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
   }
 }
 
